@@ -1,0 +1,27 @@
+Las funciones en ensamblador funcionan gracias a tres elementos:
+
+CALL → salta a la función
+
+RET → regresa al punto de llamada
+
+stack → guarda la dirección de retorno
+
+
+////////////////////////////
+
+Ejemplo de una función simple en ensamblador:
+
+mov esp,400
+
+mov eax,5
+mov ebx,3
+
+call suma
+
+jmp fin
+
+suma:
+add eax,ebx
+ret
+
+fin:
