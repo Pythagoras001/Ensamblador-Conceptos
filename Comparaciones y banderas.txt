@@ -1,0 +1,15 @@
+Comparaciones y banderas
+
+Para comparar valores se usa la instrucción:
+
+cmp
+
+////////////////////////////////////////////////////
+
+Ejemplo:
+
+cmp eax,ebx
+
+Esto no guarda el resultado, solo actualiza unas banderas internas del procesador llamadas flags.
+
+Luego se usan instrucciones de salto condicional.
