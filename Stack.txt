@@ -1,0 +1,58 @@
+PUSH
+
+push coloca un valor en la pila.
+
+Ejemplo:
+
+push eax
+
+Esto hace:
+
+ESP = ESP - 4
+[ESP] = EAX
+
+Primero se mueve el stack pointer y luego se guarda el valor.
+
+POP
+
+pop saca un valor de la pila.
+
+//////////////////////////////////////////////////////
+
+Ejemplo:
+
+pop eax
+
+Esto hace:
+
+EAX = [ESP]
+ESP = ESP + 4
+
+//////////////////////////////////////////////////////
+
+12.4 Ejemplo simple
+mov eax,5
+push eax
+
+mov eax,10
+push eax
+
+pop ebx
+pop ecx
+
+//////////////////////////////////////////////////////
+
+Estado de la pila:
+
+push 5
+push 10
+
+Pila:
+
+10
+5
+
+Ahora los pop:
+
+pop ebx  → EBX = 10
+pop ecx  → ECX = 5
