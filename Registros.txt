@@ -1,0 +1,32 @@
+Registros del procesador
+
+Los registros son pequeñas áreas de memoria dentro del procesador.
+Son extremadamente rápidos y se usan para almacenar datos temporales durante la ejecución.
+En arquitectura x86 de 32 bits los registros más comunes son:
+EAX
+EBX
+ECX
+EDX
+ESI
+EDI
+ESP
+EBP
+Registros de propósito general
+Registro	Uso común
+
+EAX	acumulador (resultados de operaciones)
+EBX	registro base
+ECX	contador
+EDX	datos adicionales para operaciones
+
+//////////////////////////////////////////////////
+
+Ejemplo:
+
+mov eax,10
+mov ebx,3
+add eax,ebx
+
+Resultado:
+
+EAX = 13
