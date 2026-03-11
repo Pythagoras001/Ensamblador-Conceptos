@@ -1,0 +1,9 @@
+mov eax,0 
+
+inicio: 
+  cmp eax,5 
+  jge fin 
+  add eax,1 
+  jmp inicio 
+
+fin:
