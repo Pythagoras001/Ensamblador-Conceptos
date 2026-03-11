@@ -1,0 +1,23 @@
+Etiquetas (labels)
+
+Las etiquetas son nombres que representan una posición en el programa.
+
+Ejemplo:
+
+inicio:
+mov eax,5
+
+Las etiquetas se usan para saltos.
+
+/////////////////////////////////
+
+Ejemplo:
+
+cmp eax,ebx
+jg mayor
+jmp fin
+
+mayor:
+mov ecx,1
+
+fin:
