@@ -1,0 +1,24 @@
+Saltos condicionales
+
+Los saltos condicionales permiten implementar lógica como if / else.
+
+Algunos de los más comunes:
+
+Instrucción	Significado
+JE	jump if equal
+JNE	jump if not equal
+JG	jump if greater
+JL	jump if less
+JGE	jump if greater or equal
+JLE	jump if less or equal
+
+////////////////////////////////////////////
+
+Ejemplo:
+
+cmp eax,ebx
+jg mayor
+
+Significa:
+
+si eax > ebx saltar a "mayor"
