@@ -1,0 +1,19 @@
+Subregistros
+
+Cada registro de 32 bits tiene versiones más pequeñas.
+
+Ejemplo con EAX:
+
+Registro	Tamaño
+EAX	32 bits
+AX	16 bits
+AH	8 bits (parte alta)
+AL	8 bits (parte baja)
+
+//////////////////////////////////////////////
+
+Ejemplo:
+
+mov ax,5
+
+Esto solo modifica 16 bits del registro EAX.
