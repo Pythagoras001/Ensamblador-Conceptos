@@ -1,0 +1,34 @@
+MOV EAX,0        ; x = 0
+
+WHILE:
+    CMP EAX,10
+    JGE FIN_WHILE    ; salir del ciclo si x >= 10
+
+    ; -------- IF --------
+    CMP EAX,3
+    JE IF_1
+
+    CMP EAX,5
+    JE IF_2
+
+    JMP ELSE
+
+IF_1:
+    ; código A
+    JMP FIN_IF
+
+IF_2:
+    ; código B
+    JMP FIN_IF
+
+ELSE:
+    ; código C
+
+FIN_IF:
+    ; -------- incremento --------
+    INC EAX
+
+    JMP WHILE        ; repetir ciclo
+
+FIN_WHILE:
+    ; continúa el programa
